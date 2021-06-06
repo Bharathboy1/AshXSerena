@@ -51,13 +51,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is Setsuna ! Nyah! 
-I am an Anime themed group management bot. You can find my list of available commands with /help Nyah! 
+Hi {}, my name is Ash X Seren ! 
+I am Pokemon Anime themed group management bot. You can find my list of available commands with /help Nyah! 
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I help admins manage their groups with a Nyah! 
+I help admins manage their groups with a Ease. 
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -74,7 +74,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/7c9519a493f3b28a88b55.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/d17220c3cc7b93b2bba8d.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 
@@ -197,7 +197,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Setsuna to your group",
+                            text="☑️ Add Ash X Serena to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -207,7 +207,7 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="🔗 Source 🔗",
-                             url="https://t.me/biriyanikhaa ")
+                             url="https://t.me/Pokemon_Arena ")
                      ],
                      [   
                         InlineKeyboardButton(
