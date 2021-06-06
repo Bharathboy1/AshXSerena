@@ -51,8 +51,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is Ash X Seren ! 
-I am Pokemon Anime themed group management bot. You can find my list of available commands with /help Nyah! 
+Hi {}, my name is Ash X Serena ! 
+I am Pokemon Anime themed group management bot. You can find my list of available commands with /help 
 """
 
 HELP_STRINGS = """
