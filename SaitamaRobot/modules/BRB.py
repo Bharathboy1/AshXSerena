@@ -65,7 +65,7 @@ def afk(update: Update, context: CallbackContext):
     sql.set_afk(update.effective_user.id, reason)
     fname = update.effective_user.first_name
     try:
-        update.effective_message.reply_text("{} is now offline Nyah!! {}".format(
+        update.effective_message.reply_text("{} is now offline !! {}".format(
             fname, notice))
     except BadRequest:
         pass
@@ -87,7 +87,7 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = ['{} is here!! Yayy!!!', '{} is awake!! kek!!', '{} r u feeling good now? Meow!!' , 
-                       'A huge meteor..... oh no thts {} Nyahh!! ', '{}-kun pops outta nowhere, Nyah!!' , 
+                       'A huge meteor..... oh no thts {} !! ', '{}-kun pops outta nowhere, !!' , 
                        ' Intensity Intensifies as {} is here!!!',
                        '{}-kun i saw u were sleeping with a bot!!! kek!!!', 'unoo.... eto... {} KuN! i s here!!! meowww!!' 
                       ] 
@@ -163,7 +163,7 @@ def check_afk(update, context, user_id, fst_name, userc_id):
         if not user.reason:
             if int(userc_id) == int(user_id):
                 return
-            res = "{} is Offline Nyah!!".format(fst_name)
+            res = "{} is Offline !!".format(fst_name)
             update.effective_message.reply_text(res, parse_mode = "html")
         else:
             if int(userc_id) == int(user_id):
