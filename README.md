@@ -1,13 +1,13 @@
-![Setsuna](https://telegra.ph/file/b01727cf8766be4568ead.jpg )
-# Setsuna Robot 
+![Ash X Serena]( https://telegra.ph/file/e21718409af77fabe5d17.jpg)
+# Ash X Serena Bot
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6141417ceaf84545bab6bd671503df51)](https://app.codacy.com/gh/AnimeKaizoku/SaitamaRobot?utm_source=github.com&utm_medium=referral&utm_content=AnimeKaizoku/SaitamaRobot&utm_campaign=Badge_Grade_Settings)  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/AnimeKaizoku/SaitamaRobot/graphs/commit-activity) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://perso.crans.org/besson/LICENSE.html) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com) [![Updates channel!](https://img.shields.io/badge/Join%20Channel-!-red)](https://t.me/OnePunchUpdates)
 
 
 A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed persona to make Mai suitable for Anime and Manga group chats. This is a fork of Saitama.
 
-Can be found on telegram as [Setsuna](https://t.me/SetsunyaBot).
+Can be found on telegram as [Ash X Serena](https://t.me/ashXserenaBot).
 
-The Support group can be reached out to at [Setsuna Support](https://t.me/MaiSakurajimaSupport), where you can ask for help about [Setsuna ](https://t.me/SetsunyaBot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Pokemon Arena ](https://t.me/Pokemon_Arena), where you can ask for help about [Ash X Serena ](https://t.me/ashXserenaBot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
 ## How to setup/deploy.
 
@@ -27,7 +27,7 @@ REMEMBER: Turn on worker dyno (Don't worry It's free :D) & Webhook
 Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
 ```
 
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Zack-Bloodshot/Setsuna )
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nryadav7412/AshXSerena)
 
 </details>  
 <details>
@@ -55,7 +55,7 @@ from SaitamaRobot.sample_config import Config
 
 class Development(Config):
     OWNER_ID = 254318997  # your telegram ID
-    OWNER_USERNAME = "SonOfLars"  # your telegram username
+    OWNER_USERNAME = ""  # your telegram username
     API_KEY = "your bot api key"  # your api key, as provided by the @botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     JOIN_LOGGER = '-1234567890' # some group chat that your bot is a member of
@@ -151,7 +151,7 @@ The `__migrate__()` function is used for migrating chats - when a chat is upgrad
 it is necessary to migrate it in the DB.
 
 The `__stats__()` function is for retrieving module statistics, eg number of users, number of chats. This is accessed 
-through the `/stats` command, which is only available to the bot owner.
+through the `/stat` command, which is only available to the bot owner.
 
 ## Starting the bot.
 
