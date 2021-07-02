@@ -14,7 +14,7 @@ def tms(update: Update, context: CallbackContext):
         
 
 
-      if message.reply_markup=InlineKeyboardMarkup(
+       message.reply_markup=InlineKeyboardMarkup(
                     [
                         InlineKeyboardButton(
                             text="☑️ Add DELIBIRD to your group",
