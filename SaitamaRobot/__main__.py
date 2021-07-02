@@ -3,6 +3,29 @@ import time
 import re
 from sys import argv
 from typing import Optional
+from pyrogram import Client, Filters
+
+from pyrogram import (InlineKeyboardMarkup,
+
+                      InlineKeyboardButton,
+
+                      CallbackQuery)
+
+import functions as func
+
+import raid_dynamax as raid
+
+from Config import Config
+
+app = Client(
+    api_id=Config.aid,
+    api_hash=Config.ahash,
+    bot_token=Config.bot_token,
+    session_name='DELIBIRD'
+)
+texts = json.load(open('src/texts.json', 'r'))
+usage_dict = {'vgc': None}
+raid_dict = {}
 
 from SaitamaRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
@@ -561,6 +584,29 @@ def main():
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate,
                                      migrate_chats)
+    
+    
+    
+    
+    #cmds
+    
+@app.on_message(Filters.command(['tms', 'tms@hexa_dex_bot']))
+
+def about(app, message):
+
+    text = texts['tms']
+
+    markup = InlineKeyboardMarkup([[
+
+        InlineKeyboardButton(
+
+            text='tms list',
+
+            url='https://telegra.ph/file/8d39d02c47da829199810.png'
+
+        )
+
+    ]])
 
     # dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
