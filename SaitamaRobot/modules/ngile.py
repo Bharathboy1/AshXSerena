@@ -10,11 +10,11 @@ def tms(update: Update, context: CallbackContext):
     args = context.args
     message = update.effective_message
 
-    if message.reply_to_message:
-        data = message.reply_to_message.text
+   
+        
 
-      else:
-        reply_markup=InlineKeyboardMarkup(
+
+      if message.reply_markup=InlineKeyboardMarkup(
                     [
                         InlineKeyboardButton(
                             text="☑️ Add DELIBIRD to your group",
