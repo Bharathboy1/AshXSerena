@@ -580,8 +580,8 @@ reply_markup=InlineKeyboardMarkup
                     [
                         InlineKeyboardButton(
                             text="☑️ Add DELIBIRD to your group",
-                            url="t.me/{}?startgroup=true".format(
-                                context.bot.username))
+                            url="https://telegra.ph/file/4c28016fde4562df9ec42.jpg)
+                            
                     ]),
     # dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
