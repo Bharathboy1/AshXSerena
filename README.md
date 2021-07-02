@@ -4,7 +4,7 @@
 
 
 ## Deploy to Heroku
-[![Deploy(https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)]
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 
 A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed persona to make Mai suitable for Anime and Manga group chats. This is a fork of Saitama.
