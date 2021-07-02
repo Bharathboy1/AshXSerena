@@ -51,7 +51,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is Ash X Serena ! 
+Alola {}, my name is DELIBIRD ! 
 I am Pokemon Anime themed group management bot. You can find my list of available commands with /help 
 """
 
@@ -62,7 +62,7 @@ I help admins manage their groups with a Ease.
 *Main* commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
+
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
@@ -74,7 +74,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/e21718409af77fabe5d17.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/4c28016fde4562df9ec42.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 
@@ -197,7 +197,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Ash X Serena to your group",
+                            text="☑️ Add DELIBIRD to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -207,12 +207,12 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="🔗 Source 🔗",
-                             url="https://t.me/Pokemon_Arena ")
+                             url="https://t.me/shinypokestore ")
                      ],
                      [   
                         InlineKeyboardButton(
                              text="Help! ", 
-                             url="https://t.me/legends_nvr_die" ) 
+                             url="https://t.me/Bharath_boy" ) 
                        
                     ]]))
                   
