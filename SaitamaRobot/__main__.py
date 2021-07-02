@@ -580,7 +580,7 @@ reply_markup=InlineKeyboardMarkup
                     [
                         InlineKeyboardButton(
                             text="☑️ Add DELIBIRD to your group",
-                            url="https://telegra.ph/file/4c28016fde4562df9ec42.jpg)
+                            url="https://telegra.ph/file/4c28016fde4562df9ec42.jpg")
                             
                     ]),
     # dispatcher.add_handler(test_handler)
