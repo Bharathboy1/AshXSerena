@@ -568,8 +568,21 @@ def main():
     
     #cmds
     
+@telethn.on(events.NewMessage(pattern=f"^[!/]tms ?(.*)"))
+async def zombies(event):
+    """tmlist"""
+
+    
 reply_markup=InlineKeyboardMarkup
 
+
+(
+                    [
+                        InlineKeyboardButton(
+                            text="☑️ Add DELIBIRD to your group",
+                            url="t.me/{}?startgroup=true".format(
+                                context.bot.username))
+                    ]),
     # dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
