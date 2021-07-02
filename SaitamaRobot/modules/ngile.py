@@ -13,7 +13,7 @@ def tms(update: Update, context: CallbackContext):
     if message.reply_to_message:
         data = message.reply_to_message.text
 
-      elif:
+      else:
         reply_markup=InlineKeyboardMarkup(
                     [
                         InlineKeyboardButton(
