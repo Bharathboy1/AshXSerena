@@ -7,15 +7,19 @@ from telegram.ext import CallbackContext, run_async
 
 @run_async
 def tms(update: Update, context: CallbackContext):
-    args = context.args
-    message = update.effective_message
+    
+    
+      parse_mode=ParseMode.MARKDOWN,
 
+                disable_web_page_preview=True,
+
+                reply_markup=InlineKeyboardMarkup
    
         
 
 
-       message.reply_markup=InlineKeyboardMarkup(
-                    [
+(
+            [
                         InlineKeyboardButton(
                             text="☑️ Add DELIBIRD to your group",
                             url="t.me/{}?startgroup=true".format(
